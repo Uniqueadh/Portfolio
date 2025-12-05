@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="https://cdn.vectorstock.com/i/500p/91/31/colorful-brushstroke-portfolio-poster-vector-21849131.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,9 +34,13 @@
 
             <div class="profile-section">
                 <div class="profile-image-container">
-                    <img src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/482112278_1882305075908975_2061126822094662873_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QzNET3qHEQIQ7kNvwHWfC1W&_nc_oc=AdlgdyxbDReQVnyjN7TCrNPvvYoUR9TbzZReS9-KJt_3MuTMZHYzIhbnvufljsVfOZFnD3kj19JkbCYlwhOA6Yyj&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=GXXT6Nimej3assWOVXzb6Q&oh=00_AflqF1GF2_ESfqTVoGfe0F4H67cn20CvQqW2aeZq8UwYJA&oe=6938FCDF"
-                         alt="Profile Picture"
-                         class="profile-image">
+
+                    <!-- ⭐ UPDATED CLICKABLE PROFILE IMAGE ⭐ -->
+                    <img id="profileThumb"
+                        src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/482112278_1882305075908975_2061126822094662873_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QzNET3qHEQIQ7kNvwHWfC1W&_nc_oc=AdlgdyxbDReQVnyjN7TCrNPvvYoUR9TbzZReS9-KJt_3MuTMZHYzIhbnvufljsVfOZFnD3kj19JkbCYlwhOA6Yyj&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=GXXT6Nimej3assWOVXzb6Q&oh=00_AflqF1GF2_ESfqTVoGfe0F4H67cn20CvQqW2aeZq8UwYJA&oe=6938FCDF"
+                        alt="Profile Picture"
+                        class="profile-image"
+                        style="cursor:pointer;">
                 </div>
 
                 <div class="profile-info">
@@ -57,5 +62,14 @@
     </footer>
 
     <script src="main.ts" type="module"></script>
+
+  <!-- SMALL IMAGE POPUP (FULL + CLEAN) -->
+<div id="miniModal" aria-hidden="true">
+    <div id="miniModalInner">
+        <img id="miniModalImg" alt="Popup Image">
+    </div>
+</div>
+
+<script src="modal.js"></script>
 </body>
 </html>
