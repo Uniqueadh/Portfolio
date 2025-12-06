@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Degree - Portfolio</title>
@@ -11,15 +10,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">Portfolio</div>
+
             <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="degree.html" class="nav-link active">Degree</a></li>
-            <li><a href="interests.html" class="nav-link">Interests</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="degree.html" class="nav-link active">Degree</a></li>
+                <li><a href="interests.html" class="nav-link">Interests</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -40,20 +42,21 @@
                     </svg>
                     <h2>Bachelor of Science in Information Technology</h2>
                     <p class="degree-institution">Westcliff University</p>
-                     
                 </div>
 
                 <div class="degree-content">
+
                     <div class="degree-section">
                         <h3>Why I Chose This Degree</h3>
-                        <p>From an early age, I've been fascinated by how technology shapes our world and drives innovation. This degree program perfectly aligns with my passion for problem-solving and creative thinking. I chose this path because it offers a comprehensive foundation in both theoretical concepts and practical applications, preparing me for the dynamic challenges of the tech industry.</p>
-
+                        <p>From an early age, I've been fascinated by how technology shapes our world and drives innovation. This degree program perfectly aligns with my passion for problem-solving and creative thinking.</p>
                         <p>The program's emphasis on hands-on learning and real-world projects particularly attracted me, as I believe the best way to master technology is through direct experience and continuous experimentation.</p>
                     </div>
 
                     <div class="degree-section">
                         <h3>Core Coursework & Subjects</h3>
+
                         <div class="coursework-grid">
+
                             <div class="course-item">
                                 <svg class="course-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <rect x="2" y="3" width="20" height="14" rx="2"/>
@@ -125,8 +128,10 @@
                                     <p>AI, machine learning, and innovation</p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -136,6 +141,16 @@
         <p>&copy; 2025 Unique Adhikari. All rights reserved.</p>
     </footer>
 
-    <script src="main.ts" type="module"></script>
+  
+      <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

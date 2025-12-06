@@ -43,7 +43,6 @@
 
                     <h2 class="interest-title">Area of Interest 1</h2>
                     <p class="interest-card">Artificial Intelligence</p>
-                    
 
                     <div class="interest-content">
                         <h3>Why I Love This Field</h3>
@@ -69,7 +68,7 @@
                     </div>
 
                     <h2 class="interest-title">Area of Interest 2</h2>
-                    <p class="interest-card"> Data Science </p>
+                    <p class="interest-card">Data Science</p>
 
                     <div class="interest-content">
                         <h3>What Makes This Exciting</h3>
@@ -92,6 +91,15 @@
         <p>&copy; 2025 Unique Adhikari. All rights reserved.</p>
     </footer>
 
-    <script src="main.ts" type="module"></script>
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
